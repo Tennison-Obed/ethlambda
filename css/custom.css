@@ -1,0 +1,320 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+:root {
+    --main-color-lightpink: rgb(238, 80, 98); 
+    --main-color-Darkpink:#BF0426;
+    --main-color-Greycust:rgb(246, 246, 242);
+    --main-color-Green: #4CC790;
+    --main-color-Blue:#3c9ee5;
+    --main-color-morelightpink: rgb(224, 192, 195); 
+  }
+body{
+    top:0;
+   left: 0;
+   margin: 0;
+   font-family: 'Noto Sans', sans-serif;
+    background-color: var(--main-color-Greycust) !important;
+    height: 2000px;
+}
+.inputDescrp{
+  color: var(--main-color-Greycust) !important;
+}
+.text-custpink{
+    color:var(--main-color-lightpink) !important;
+}
+.text-custDartPink{
+    color:var(--main-color-Darkpink) ;
+}
+.bg-custDartPin{
+    background-color:var(--main-color-Darkpink) ;
+}
+/* background */
+.bg-custgrey{ 
+    background-color: var(--main-color-Greycust);
+}
+.bg-MorelightPink{
+  background-color: var(--main-color-morelightpink);
+
+}
+.logoTop img{
+  width:30px;
+height: 100%;
+margin:5px  10px;
+
+}
+#bannerTop{    
+    background-color:var(--main-color-lightpink);
+background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 5px;
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;    
+}
+.textsize-4{
+    font-size: 30px;
+}
+#bannerTop  h1,
+#bannerTop  .textsize-4 {
+    opacity: unset;
+    color: var(--main-color-Greycust);
+}
+.stateSearch{
+    padding: 20px;
+    border: 0px;
+    font: unset;
+    border-radius: 2px;
+    position: relative;
+}
+.stateSearch:hover{
+  background-color: var(--main-color-morelightpink);
+}
+.SearchForm{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;   
+}
+.searchAutofill{
+    
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    position: relative;   
+}
+.autocompleteList{   
+    display: none;    
+    flex-direction: column;
+    background-color: white;
+    text-align: left;     
+    border-top: 1px solid var(--main-color-Darkpink);
+    z-index: 9;
+    position: absolute;
+    top: 64px;
+    width: 100%; 
+    padding: 0px;    
+} 
+.autocompleteList  li{
+    list-style: none;
+    border: 0px;    
+    /* border-bottom: 1px solid val(--main-color-lightpink); */
+}
+.autocompleteList li:hover{
+    background-color:var( --main-color-Greycust);
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+#topList{
+    top: 10px;    
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#topList article{
+    width: 100%;    
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#topList article div{
+    flex: 1;    
+    margin: 0 10px;
+}
+.TopDescrption{
+  background-color: unset;
+  border: unset;
+  width: 70%;
+  align-content: center; 
+}
+.TopDescrption article{
+display: flex;
+justify-content: flex-start;
+align-content: center;
+flex-direction: column;
+padding: 12px 0px;
+text-align: center;
+}
+
+@media screen and (max-width: 620px) {
+  .TopDescrption article header h4 {
+    font-size: 17px;
+    
+  }
+  .TopDescrption article p{
+    font-size: 10px;
+  }
+  .stateSearch{
+    padding: 10px;
+  }
+  .autocompleteList{
+    top: 43px;
+  }
+  
+}
+/* chart css */
+
+.flex-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;    
+  }
+  
+  
+  .single-chart {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch ;
+    align-items: center;
+    
+  }
+  
+  .circular-chart {
+    display: block;    
+    max-width: 80%;
+    max-height: 250px;
+  }
+  
+  .circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+  }
+  
+  .circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+  }
+  #topList svg text{
+    font-size: .4rem;
+  }
+  @keyframes progress {
+    0% {
+      stroke-dasharray: 100 100;
+    }
+  }
+  
+  .circular-chart.orange .circle {
+    stroke: #ff9f00;
+  }
+  
+  .circular-chart.green .circle {
+    stroke: #4CC790;
+  }
+  
+  .circular-chart.blue .circle {
+    stroke: #3c9ee5;
+  }
+  
+  .percentage {
+    fill: #666;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+  }
+/* chart css ends */
+/* table css */
+#tableBlock article{
+  width: 95%;   
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#tableBlock article
+  /* scroll bar */
+  .scrollbar::-webkit-scrollbar {
+    background-color:#fff;    
+}
+#stateListTable tbody .btn{
+  background-color: var(--main-color-lightpink);
+  border: 2px solid white;
+} 
+#stateListTable tbody .btn:hover{
+  background-color: var(--main-color-morelightpink);
+}
+
+
+#lastfooterSection{
+  height: 200px;
+  background-color:#303540;
+  color: white;
+  font-size: 40px;
+}
+#lastfooterSection article{
+  width: 60%;
+  margin: 0 auto;
+  padding: 30px 0 0 0; 
+  display: flex;
+  justify-content: center; 
+}
+#lastfooterSection article i{
+  padding: 20px;
+  transition: transform .5s;
+  color: white;
+}
+#lastfooterSection hr{
+  color: white;
+  background-color: white;
+  width: 100%;
+}
+#lastfooterSection article i:hover{
+  transform: scale(1.5);  
+}
+@media screen and (max-width: 620px) {
+  #lastfooterSection{
+    font-size: 16px;
+  }
+  #lastfooterSection section{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content:center;
+  }
+}
+.bottompart{
+  padding: 5px;
+  background-color:#494f5b;
+  font-size: 12px;
+  text-align: center;
+  height: 30px;
+  color: white;
+}
+/* background of the scrollbar except button or resizer */
+.scrollbar::-webkit-scrollbar-track {
+    background-color:#fff
+}
+.scrollbar::-webkit-scrollbar-track:hover {
+    background-color:#f4f4f4
+}
+
+/* scrollbar itself */
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color:#babac0;
+    
+    border:5px solid #fff
+}
+.scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color:var( --main-color-lightpink);
+    border:4px solid #f4f4f4
+}
+
+/* set button(top and bottom of the scrollbar) */
+.scrollbar::-webkit-scrollbar-button {display:none}
+
+/* div box */
+body{background-color:#babac0}
+.scrollbar {
+    /* height: 10vh; */
+   
+    
+    background: #fff;
+    }
+/* .overflow{min-height: 100vh} */

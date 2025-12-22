@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Covid-19</title>
+    <link rel = "icon" href ="./images/idiotixz logo.png"    type = "image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/popupcss.css">
+    <link rel="stylesheet" href="./css/newsPage.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4cddf94f3b.js" crossorigin="anonymous"></script>
+    
+
+</head>
+<body>
+<!-- navbar starts -->
+<nav class="navbar navbar-expand-lg navbar-light bg-custgrey ">
+    <span class="logoTop"><img src="./images/idiotixz logo.png" alt=""></span>
+        <a class="navbar-brand text-custpink" href="#">Diotixz</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active" id="page1button">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item " id="page2button">
+              <a class="nav-link disabled" href="#">Global</a>
+            </li>
+            <li class="nav-item " >
+              <a class="nav-link disabled" href="#">
+                  Statistics
+              </a>
+             
+            </li>
+            <li class="nav-item " id="page3button">
+                <a class="nav-link " href="#">
+                  News
+                </a>              
+              </li>
+           
+          </ul>
+         
+        </div>   
+      </nav>
+<!-- navbar ends -->
+<div class="bodysec">
+            <!-- page 1 -->
+<div id="Page1HTML">
+<!-- jumbotrton starts -->
+<div id="bannerTop" class="jumbotron  text-center">
+        
+        <h1 class="display-4">Stay Home! Stay Safe!</h1>
+        
+        <hr class="my-4">
+        <p  class="textsize-4">COVID-19 IN INDIA</p>
+       <form action="" class="SearchForm" autocomplete="off">
+           <div class="searchAutofill">
+               <input type="list" name="" placeholder="Know your " class="stateSearch" id="districtInput">
+               <small  class="form-text text-muted text-left inputDescrp">For States within India</small>
+                <ul class="autocompleteList" class="scrollbar">
+                  <li class="list-group-item "><p></p></li>  
+                
+            </ul>
+        </div>
+        <a class="btn btn-primary btn-lg stateSearch bg-custDartPin" href="#" id="districtTriggerBtn"role="button" data-toggle="modal" data-target="#exampleModal">Get Details</a>
+
+    </form>      
+      </div>
+<!-- jumbotrton ends -->
+
+<!-- top list section -->
+<section id="topList">
+    <h1>Total Cases:<span class="num">Buffering</span>
+    </h1>
+  <h3 class="text-custDartPink">MOST CRITICAL STATES</h3>
+  
+  <article class="flex-wrapper">
+    
+    <div id="FirstChart" class="single-chart">
+      <svg viewBox="0 0 36 36" class="circular-chart orange">
+        <path class="circle-bg"
+          d="M18 2.0845
+            a 15.9155 15.9155 0 0 1 0 31.831
+            a 15.9155 15.9155 0 0 1 0 -31.831"
+        />
+        <path class="circle" id="firstCirclePath" 
+          stroke-dasharray="50, 100"
+          d="M18 2.0845
+            a 15.9155 15.9155 0 0 1 0 31.831
+            a 15.9155 15.9155 0 0 1 0 -31.831"
+        />
+        <text x="18" y="20.35" class="percentage num">30%</text>        
+      </svg>
+      <section class="card TopDescrption" >
+        <article>
+            <header><h4>Buffering</h4></header>
+            <p>Total Cases      :   <span>Buuffering..<span></p>          
+        </article>
+      </section>     
+    </div>
+    <div class="single-chart" id="SecondChart">
+      <svg viewBox="0 0 36 36" class="circular-chart blue">
+        <path class="circle-bg"
+          d="M18 2.0845
+            a 15.9155 15.9155 0 0 1 0 31.831
+            a 15.9155 15.9155 0 0 1 0 -31.831"
+        />
+        <path class="circle" id="secndCirclePath"
+          stroke-dasharray="70, 100"
+          d="M18 2.0845
+            a 15.9155 15.9155 0 0 1 0 31.831
+            a 15.9155 15.9155 0 0 1 0 -31.831"
+        />
+        <text x="18" y="20.35" class="percentage num">70%</text>
+      </svg>
+      <section class="card TopDescrption">
+          <article>
+              <header><h4>Buffering..</h4></header>
+              <p>Total Cases  : <span>Buuffering..<span></p>
+                
+          </article>
+        </section>
+    </div>
+    <div class="single-chart" id="ThirdChart">
+      <svg viewBox="0 0 36 36" class="circular-chart green">
+        <path class="circle-bg"
+          d="M18 2.0845
+            a 15.9155 15.9155 0 0 1 0 31.831
+            a 15.9155 15.9155 0 0 1 0 -31.831"
+        />
+        <path class="circle" id="ThirdCirclePath"
+          stroke-dasharray="80, 100"
+          d="M18 2.0845
+            a 15.9155 15.9155 0 0 1 0 31.831
+            a 15.9155 15.9155 0 0 1 0 -31.831"
+        />
+        <text x="18" y="20.35" class="percentage num">80%</text>
+      </svg>
+      <section class="card TopDescrption" id="">
+          <article>
+              <header><h4>Buffering..</h4></header>
+              <p>Total Cases  : <span>Buuffering..<span></p>
+          </article>
+        </section>
+    </div>
+  </article>  
+</section>
+<hr>
+<!-- TABLE SECTION -->
+<section id="tableBlock">
+  <article>
+    <header><h1>COVID-19 IN INDIA</h1></header>
+    <table class="table table-striped " id="stateListTable">
+      <thead>
+        <tr>
+          <th scope="col">Sl.no</th>
+          <th scope="col">State</th>
+          <th scope="col">Confirmed</th>
+          <th scope="col">View District list</th>
+        </tr>
+      </thead>
+      <tbody>    
+  
+      </tbody>
+    </table>
+  </article>
+</section>
+<!-- TABLE SECTION ENDS -->
+</section>
+</div>
+<!-- districtpopup start -->
+
+<!-- districtpopup ends -->
+          <!-- page 1 ends -->
+<div id="Page2HTML">
+
+</div>
+<!-- page 2ends -->
+<div id="Page3HTML">
+
+  </div>
+  <!-- page 3ends -->
+</div>
+<div id="DistrictPopup">
+</div>
+<footer id="lastfooterSection">    
+  <section class="container">   
+    <article>
+    <div class="row text-center ">
+      <div class="">
+          <a  href="https://www.facebook.com/tennyson.obed" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>        
+      </div>
+      <div class="">          
+          <a  href="https://wa.me/919042133114?text=I%20visited%20your%20blog" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+        <div class="">
+            <a href="https://twitter.com/Tennysonobed?ref_src=twsrc%5Etfw" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+          <div class="">
+              <a href="https://www.instagram.com/diotixz/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+            <div class="">
+           <a href="https://www.linkedin.com/in/tennyson-obed-0b972a128" target="_blank"><i class="fab fa-lg fa-linkedin "></i></a>              
+              </div>
+            </div>
+  </article><hr>  
+  </section>
+</footer>
+<div class="bottompart">
+    <p>© 2020 Copyright : getcovid19stats.rf.gd</p>
+  </div>
+<!-- top list section edns -->
+    <script src="./js/jquery-3.4.1.min.js" ></script>
+    <script src="./css/bootstrap/js/bootstrap.min.js"> </script>
+    <script src="./js/pagehandler.js"></script>
+    <script src="./js/custom.js"></script>
+    <script src="./js/table.js"></script>
+    <script src="./js/news.js"></script>
+    <script src="./js/animated-counting-numbers-numscroll/js/jquery.numscroll.js"></script>    
+</body>
+</html>

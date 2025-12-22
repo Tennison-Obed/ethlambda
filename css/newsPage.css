@@ -1,0 +1,32 @@
+#newsPage{
+    width: 95%;
+    margin: 20px auto;
+    
+}
+.newsBlock{
+    background-color:#EAE5DD;    
+    box-shadow: 6px 2px 10px #0c0909;
+    margin: 20px 5px;
+    padding: 20px;
+}
+.newsBlock article figure{
+    display: flex;
+    
+}
+.newsBlock article figure img{
+    margin:  0 20px;
+    height: 200px;   
+}
+.newsBlock footer{
+    display: flex;
+    justify-content:space-around;
+}
+@media screen and (max-width: 620px) {
+    .newsBlock article figure{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+
+
